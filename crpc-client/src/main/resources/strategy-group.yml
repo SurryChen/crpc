@@ -1,0 +1,22 @@
+# 定义策略组
+Strategy:
+  # 随便一个名字
+  - name: test
+    # 序列化可选类型：Hessian、ProtoBuf
+    # 支持SPI拓展，拓展名为类名
+    serialize: Hessian
+    # 注册中心可选类型：Zookeeper
+    # 支持SPI拓展，拓展名为类名
+    registerCenter: Zookeeper
+    # 负载均衡可选类型：Random、ConsistentHash
+    # 支持SPI拓展，拓展名为类名
+    loadBalance: Random
+    # 压缩算法可选类型：GZIP、Deflate
+    # 支持SPI拓展，拓展名为类名
+    compressAlgorithm: Deflate
+
+  - name: example
+    serialize: kryo
+    registerCenter: Zookeeper
+    loadBalance: ConsistentHash
+    compressAlgorithm: Deflate

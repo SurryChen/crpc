@@ -1,0 +1,2 @@
+Hessian = com.somecode.core.serialize.hessian.HessianSerialize
+Kryo = com.somecode.core.serialize.kryo.KryoSerialize

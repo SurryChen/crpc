@@ -1,0 +1,4 @@
+# 服务端基础配置
+Server:
+  serialize: Hessian
+  compressAlgorithm: Deflate

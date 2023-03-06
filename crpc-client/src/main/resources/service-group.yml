@@ -1,0 +1,27 @@
+# 服务配置以及节点配置
+Service:
+      # 服务名
+    - name: userService
+      # 服务节点
+      netWorkNode:
+          # 节点名
+        - name: guangzhou
+          # 节点ip
+          host: 127.0.0.1
+          # 节点端口
+          port: 9000
+#        - name: hengzhou
+#          host: 127.0.0.1
+#          port: 9000
+      # 服务连接超时时间
+      timeout: 1000
+      # 策略
+      strategy: test
+    - name: cookService
+      netWorkNode:
+        - name: shanghai
+          host: 127.0.0.1
+          port: 9000
+      # 服务连接超时时间
+      timeout: 700
+      strategy: example

@@ -1,0 +1,2 @@
+Deflate = com.somecode.core.compressAlgorithm.deflate.DeflateCompressAlgorithm
+Gzip = com.somecode.core.compressAlgorithm.gzip.GzipCompressAlgorithm

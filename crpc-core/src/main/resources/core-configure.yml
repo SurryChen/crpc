@@ -1,0 +1,14 @@
+CompressAlgorithm:
+  DeflateCompressAlgorithm:
+    level: 1
+
+Zookeeper:
+  ip: 127.0.0.1
+  port: 2181
+  sessionTimeout: 1000
+  connectionTimeout: 1000
+
+Service:
+  name: userService
+  ip: 127.0.0.1
+  port: 9000
